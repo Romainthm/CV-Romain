@@ -1,16 +1,169 @@
-body{
-  margin: 0px;
-  margin-top: 0px;
-  margin-bottom: auto;
+/* si la fenêtre fait au plus 1024px de large */
+@media all and (max-width: 1024px){
+  body{
+    color: navy;
+  }
 }
-#Orange{
-  background-color: #d37b4f;
-  height: 120px;
+/* Pour faire disparaitre mes éléments sur mobiles j'utilise la media querie "max-device-width" */
+@media all and (max-device-width: 480px){
+  body{
+    display: none;
+  }
+}
+/* Nouvelles règles si la fenêtre fait au moins 920px de large */
+@media screen and (min-width: 920px){
+  h1{
+    background-color: lightblue;
+  }
+}
+/* Sur tous types d'écran, quand la largeur de la fenêtre est comprise entre 360px et 1280px */
+@media screen and (min-width: 360px) and (max-width: 1280px){
+  body{
+    background-color: lightgrey;
+  }
+#conteneur{
+  display: flex;
+  flex-wrap: wrap;
+}
+#gris{
+  background-color: #605d5c;
+  height: 200px;
   width: 100%;
+  border-radius: 10px 10px 5px 5px;
 }
 h1{
+  display: block;
   color: #ffffff;
-  font-size: 35px;
+  font-size: 30px;
   margin: auto;
+  text-align: left;
+  padding-left: 20px;
+}
+hr{
+ margin-right: 20px;
+ margin-left: 20px;
+}
+#projet{
+  color: #ffffff;
+  font-size: 18px;
+  text-align: left;
+  padding-left: 10px;
+}
+#onglet-photo{
+  background-color: #e98a2b;
+  margin-top: 10px;
+  height: 40px;
+  width: 43%;
+}
+#XP{
+  text-align: center;
+  padding-top: 5px;
+}
+#Formation > h2{
+  background-color: #e98a2b;
+  margin-top: auto;
+  height: 37px;
+  width: 43%;
+  float: right;
+}
+div > #FRM{
+  text-align: center;
+  padding-top: 5px;
+}
+#mail{
+  height: 50px;
+}
+nav > ul{
+  margin: 0px;
+  padding: 0px;
+}
+nav > ul > li{
+  margin-top: 5px;
+  float: left;
+  display: flex;
+  position: relative;
+}
+nav li{
+  list-style-type: none;
+}
+.submenu{
+  display: none;
+}
+nav{
+  width: 100%
+  color: #635B5D;
+}
+nav > ul::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+nav a{
+  display: inline-block;
+  text-decoration: none;
+  border-radius: 10px 10px 5px 5px;
+}
+nav > ul > li > a{
+  padding: 20px 30px;
+  color:#635d5d;
+  border-radius: 10px 10px 5px 5px;
+}
+nav li:hover .submenu{
+  display: inline-block;
+  position: absolute;
+  top: 100%;
+  left: 0px;
+  padding: 0px;
+  z-index: 100000;
+  border-radius: 0px 0px 10px 10px;
+}
+.submenu li{
+  border-bottom: 2px solid  #635d5d;
+  border-radius: 0px 0px 10px 10px;
+}
+.submenu li a{
+  padding: 20px 10px;
+  font-size: 15px;
+  color:#635d5d;
+  width: 270px;
+  border-radius: 10px 10px 5px 5px;
+}
+.onglet-2017:hover{
+  border-top: 5px solid  #635d5d;
+  background-color: RGBa(228, 77, 38, 0.15);
+}
+.onglet-2018:hover{
+  border-top: 5px solid  #635d5d;
+  background-color: RGBa(228, 77, 38, 0.15);
+}
+.onglet-2019:hover{
+  border-top: 5px solid  #635d5d;
+  background-color: RGBa(228, 77, 38, 0.15);
+}
+.onglet-2017{
+  background-color: orange;
+  border-radius: 10px 10px 10px 10px;
+}
+.onglet-2018{
+  background-color: orange;
+  border-radius: 10px 10px 10px 10px;
+}
+.onglet-2019{
+  background-color: orange;
+  border-radius: 10px 10px 10px 10px;
+}
+nav > ul > li:hover a{
+  padding: 15px 30px 20px 30px
+}
+.onglet-2017 .submenu{
+  background-color: RGB(230, 100, 40);
+}
+.onglet-2018 .submenu{
+  background-color: RGB(230, 100, 40);
+}
+.onglet-2019 .submenu{
+  background-color: RGB(230, 100, 40);
+}
+li{
   text-align: center;
 }
