@@ -1,29 +1,99 @@
-/* si la fenêtre fait au plus 1024px de large */
-@media all and (max-width: 1024px){
-  body{
-    color: navy;
-  }
+.orange{
+  height: 18px;
+  width: 180px;
+  background-color: green;
+  display: block;
+  margin: auto;
+  border: 1px  solid black;
+  text-align: center;
 }
-/* Pour faire disparaitre mes éléments sur mobiles j'utilise la media querie "max-device-width" */
-@media all and (max-device-width: 480px){
-  body{
-    display: none;
-  }
-}
-/* Nouvelles règles si la fenêtre fait au moins 920px de large */
-@media screen and (min-width: 920px){
-  h1{
-    background-color: lightblue;
-  }
-}
-/* Sur tous types d'écran, quand la largeur de la fenêtre est comprise entre 360px et 1280px */
-@media screen and (min-width: 360px) and (max-width: 1280px){
-  body{
-    background-color: lightgrey;
-  }
 #conteneur{
-  display: flex;
-  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+#sujet{
+  font-size: 15px;
+}
+body{
+  font-family: 'Source code pro', Calibri, serif;
+}
+nav > ul{
+  margin: 0px;
+  padding: 0px;
+}
+nav > ul > li{
+  float: left;
+  position: relative;
+}
+nav li{
+  list-style-type: none;
+}
+.submenu{
+  display: none;
+}
+nav{
+  width: 100%;
+  background-color: grey;
+}
+nav > ul::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+nav a{
+  display: inline-block;
+  text-decoration: none;
+}
+nav > ul > li > a{
+  padding: 20px 30px;
+  color: #FFF;
+}
+nav li:hover .submenu{
+  display: inline-block;
+  position: absolute;
+  top: 100%
+  left: 0px;
+  padding: 0px;
+  z-index: 100000;
+}
+.submenu li{
+  border-bottom: 2px solid #CCC;
+}
+.submenu li a{
+  padding: 20px 10px;
+  font-size: 15px;
+  color: grey;
+  width: 270px;
+}
+.Apropos:hover{
+  border-top: 5px solid #ffffff;
+  background-color: grey;
+}
+.Monobjectifs:hover{
+  border-top: 5px solid #ffffff;
+  background-color: grey;
+}
+.XP:hover:hover{
+  border-top: 5px solid #ffffff;
+  background-color: grey;
+}
+.Diplome:hover{
+  border-top: 5px solid #ffffff;
+  background-color: grey;
+}
+nav > ul > li:hover a {
+  padding: 15px 30px 20px 30px;
+}
+.Apropos .submenu{
+  background-color: #ffffff
+}
+.Monobjectifs .submenu{
+  background-color: #ffffff
+}
+.XP .submenu{
+  background-color: #ffffff
+}
+.Diplome .submenu{
+  background-color: #ffffff
 }
 #gris{
   background-color: #605d5c;
@@ -31,17 +101,28 @@
   width: 100%;
   border-radius: 10px 10px 5px 5px;
 }
+#gras{
+  color:#ffffff;
+}
 h1{
-  display: block;
   color: #ffffff;
   font-size: 30px;
   margin: auto;
   text-align: left;
+  padding-left: 16px;
+  font-family: 'Libre Baskerville', serif;
+}
+#metier{
+  color: #ffffff;
+  font-size: 18px;
+  margin: auto;
+  text-align: left;
   padding-left: 20px;
 }
-hr{
- margin-right: 20px;
+#t1{
+ margin-right: 200px;
  margin-left: 20px;
+ color: #ffffff;
 }
 #projet{
   color: #ffffff;
@@ -70,100 +151,63 @@ div > #FRM{
   text-align: center;
   padding-top: 5px;
 }
-#mail{
-  height: 50px;
+.mail{
+  height: 35px;
+  margin-left: 30px;
 }
-nav > ul{
-  margin: 0px;
-  padding: 0px;
+.adresse{
+  height: 35px;
+  margin-left: 30px;
 }
-nav > ul > li{
-  margin-top: 5px;
-  float: left;
-  display: flex;
-  position: relative;
+.cv{
+  height: 35px;
+  margin-left: 30px;
 }
-nav li{
-  list-style-type: none;
+.link{
+  height: 35px;
+  margin-left: 30px;
 }
-.submenu{
-  display: none;
+.git{
+  height: 35px;
+  margin-left: 30px;
 }
-nav{
-  width: 100%
-  color: #635B5D;
+.html{
+  height: 35px;
+  margin-left: 13px;
+  margin-top: 10px;
 }
-nav > ul::after{
-  content: "";
+.css{
+  height: 35px;
+  margin-left: 15px;
+  margin-top: 10px;
   display: block;
-  clear: both;
 }
-nav a{
-  display: inline-block;
-  text-decoration: none;
-  border-radius: 10px 10px 5px 5px;
+.java{
+  height: 35px;
+  margin-left: 15px;
+  margin-top: 10px;
+  display: block;
 }
-nav > ul > li > a{
-  padding: 20px 30px;
-  color:#635d5d;
-  border-radius: 10px 10px 5px 5px;
+.pyton{
+  height: 35px;
+  margin-top: -5px;
+  margin-top: 11px;
+  display: block;
 }
-nav li:hover .submenu{
-  display: inline-block;
-  position: absolute;
-  top: 100%;
-  left: 0px;
-  padding: 0px;
-  z-index: 100000;
-  border-radius: 0px 0px 10px 10px;
+.zoom:hover{
+  -webkit-transform: scale(1.2);
 }
-.submenu li{
-  border-bottom: 2px solid  #635d5d;
-  border-radius: 0px 0px 10px 10px;
-}
-.submenu li a{
-  padding: 20px 10px;
-  font-size: 15px;
-  color:#635d5d;
-  width: 270px;
-  border-radius: 10px 10px 5px 5px;
-}
-.onglet-2017:hover{
-  border-top: 5px solid  #635d5d;
-  background-color: RGBa(228, 77, 38, 0.15);
-}
-.onglet-2018:hover{
-  border-top: 5px solid  #635d5d;
-  background-color: RGBa(228, 77, 38, 0.15);
-}
-.onglet-2019:hover{
-  border-top: 5px solid  #635d5d;
-  background-color: RGBa(228, 77, 38, 0.15);
-}
-.onglet-2017{
-  background-color: orange;
+#box1{
+  margin-top: 30px;
+  height: 300px;
+  width: 210px;
+  background-color: grey;
   border-radius: 10px 10px 10px 10px;
 }
-.onglet-2018{
-  background-color: orange;
-  border-radius: 10px 10px 10px 10px;
+#cmp{
+  text-align:
+
 }
-.onglet-2019{
-  background-color: orange;
-  border-radius: 10px 10px 10px 10px;
-}
-nav > ul > li:hover a{
-  padding: 15px 30px 20px 30px
-}
-.onglet-2017 .submenu{
-  background-color: RGB(230, 100, 40);
-}
-.onglet-2018 .submenu{
-  background-color: RGB(230, 100, 40);
-}
-.onglet-2019 .submenu{
-  background-color: RGB(230, 100, 40);
-}
-li{
-  text-align: center;
+#t2{
+  width: 90%;
 }
