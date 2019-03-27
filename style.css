@@ -1,14 +1,55 @@
-.orange{
+#bar{
+  border: 2px solid black;
   height: 18px;
-  width: 180px;
-  background-color: green;
-  display: block;
+  width: 60%;
   margin: auto;
-  border: 1px  solid black;
+}
+.frn{
+  background-color: green;
+  height: 18px;
+  width: 100%;
   text-align: center;
+  color: black;
+  margin: auto;
+}
+.eng{
+  background-color: green;
+  height: 18px;
+  width: 75%;
+  text-align: center;
+  color: black;
+}
+.spn{
+  background-color: green;
+  height: 18px;
+  width: 20%;
+  text-align: center;
+  color: black;
+}
+.ht{
+  background-color: green;
+  height: 18px;
+  width: 50%;
+  text-align: center;
+  color: black
+}
+.cs{
+  background-color: green;
+  height: 18px;
+  width: 45%;
+  text-align: center;
+  color: black;
+}
+.jv{
+  background-color: green;
+  height: 18px;
+  width: 0%;
+  text-align: center;
+  color: black;
 }
 #conteneur{
   margin-bottom: 10px;
+  margin-left: 39%;
 }
 #sujet{
   font-size: 15px;
@@ -31,8 +72,9 @@ nav li{
   display: none;
 }
 nav{
-  width: 100%;
   background-color: grey;
+  padding-left: 25%;
+  margin: auto;
 }
 nav > ul::after{
   content: "";
@@ -40,7 +82,7 @@ nav > ul::after{
   clear: both;
 }
 nav a{
-  display: inline-block;
+  display: block;
   text-decoration: none;
 }
 nav > ul > li > a{
@@ -97,7 +139,7 @@ nav > ul > li:hover a {
 }
 #gris{
   background-color: #605d5c;
-  height: 200px;
+  height: 210px;
   width: 100%;
   border-radius: 10px 10px 5px 5px;
 }
@@ -108,7 +150,7 @@ h1{
   color: #ffffff;
   font-size: 30px;
   margin: auto;
-  text-align: left;
+  text-align: center;
   padding-left: 16px;
   font-family: 'Libre Baskerville', serif;
 }
@@ -116,13 +158,14 @@ h1{
   color: #ffffff;
   font-size: 18px;
   margin: auto;
-  text-align: left;
+  text-align: center;
   padding-left: 20px;
 }
 #t1{
- margin-right: 200px;
- margin-left: 20px;
+ margin-right: 20%;
+ margin-left: 20%;
  color: #ffffff;
+ text-align: center;
 }
 #projet{
   color: #ffffff;
@@ -152,62 +195,151 @@ div > #FRM{
   padding-top: 5px;
 }
 .mail{
-  height: 35px;
-  margin-left: 30px;
+  height: 30px;
+  padding-right: 3%;
 }
 .adresse{
-  height: 35px;
-  margin-left: 30px;
+  height: 30px;
+  padding-right: 3%;
 }
 .cv{
-  height: 35px;
-  margin-left: 30px;
+  height: 30px;
+  padding-right: 3%;
 }
 .link{
-  height: 35px;
-  margin-left: 30px;
+  height: 30px;
+  padding-right: 3%;
 }
 .git{
-  height: 35px;
-  margin-left: 30px;
+  height: 30px;
+  padding-right: 3%;
+}
+.tel{
+  height: 30px;
+  padding-right: 3%;
+  margin-left: 10px;
 }
 .html{
   height: 35px;
-  margin-left: 13px;
+  margin-left: 45%;
+  margin-bottom: 10px;
   margin-top: 10px;
+  display: block;
 }
 .css{
-  height: 35px;
-  margin-left: 15px;
+  height: 32px;
+  margin-left: 45%;
+  margin-bottom: 10px;
   margin-top: 10px;
   display: block;
 }
 .java{
-  height: 35px;
-  margin-left: 15px;
+  height: 30px;
+  margin-left: 45%;
+  margin-bottom: 10px;
   margin-top: 10px;
   display: block;
 }
-.pyton{
+.fr{
   height: 35px;
-  margin-top: -5px;
-  margin-top: 11px;
+  margin-left: 45%;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  display: block;
+}
+.en{
+  height: 37px;
+  margin-left: 45%;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  display: block;
+}
+.esp{
+  height: 25px;
+  margin-left: 45%;
+  margin-bottom: 10px;
+  margin-top: 10px;
   display: block;
 }
 .zoom:hover{
   -webkit-transform: scale(1.2);
 }
 #box1{
-  margin-top: 30px;
+  margin-right: 10px;
+  margin-top: 35px;
   height: 300px;
-  width: 210px;
+  width: 15%;
+  background-color: grey;
+  border-radius: 10px 10px 10px 10px;
+}
+.box3{
+  margin-right: 10px;
+  margin-top: 35px;
+  height: 100%;
+  width: 45%;
+  background-color: grey;
+  border-radius: 10px 10px 10px 10px;
+}
+.bbox{
+  display: flex;
+  flex-wrap: wrap;
+}
+#box2{
+  margin-right: 10px;
+  margin-top: 35px;
+  height: 300px;
+  width: 15%;
   background-color: grey;
   border-radius: 10px 10px 10px 10px;
 }
 #cmp{
-  text-align:
-
+  margin: auto;
+  text-align: center;
+  font-size: 90%;
+  color: white;
+  background-color: #8c2020;
+  border-radius: 10px 10px 0px 0px;
 }
 #t2{
   width: 90%;
+}
+#exp{
+  font-size: 110%;
+  margin: auto;
+  margin-left: 10px;
+  text-align: left;
+  color: #ffffff
+}
+#ODD{
+  margin-top: 10px;
+  font-size: 90%;
+  margin-left: 10px;
+}
+#motv{
+  font-size: 1.0em;
+  text-align: left;
+  padding-left: 5px;
+}
+#box4{
+  margin-right: 10px;
+  margin-top: 35px;
+  height: 400px;
+  width: 20%;
+  background-color: grey;
+  border-radius: 10px 10px 10px 10px;
+}
+#photo{
+  margin-left: 13%;
+  margin-top: 10px;
+  height: 50%;
+  width: 70%;
+  border: 2px solid black;
+  border-radius: 10px 10px 10px 10px;
+}
+#b4{
+ height: 6px;
+ background-color: #8c2020;
+}
+#tel{
+  margin-top: 10px;
 }
